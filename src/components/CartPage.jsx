@@ -31,8 +31,8 @@ const CartPage = () => {
     const onRemove = (id) => {
         if (window.confirm(id + '번 항목 삭제하시겠습니까?'))
         {
-            remove(ref(db, `favorite/${uid}/${id}`));
-            alert('즐겨찾기 삭제완료!');
+            remove(ref(db, `cart/${uid}/${id}`));
+            alert('장바구니 삭제완료!');
         }
     
       }
